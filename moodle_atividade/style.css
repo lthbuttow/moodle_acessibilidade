@@ -1,0 +1,19 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container{
+    background-color: #FFF;
+}
+
+.info{
+    background-color: blue;
+    color: #FFF;
+    padding: 5px;
+    font-size: 12px;
+}
