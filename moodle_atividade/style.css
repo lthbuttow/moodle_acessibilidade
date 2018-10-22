@@ -17,3 +17,38 @@ body,html{
     padding: 5px;
     font-size: 12px;
 }
+.form-1{
+
+}
+.form-2{
+	display: none;
+	}
+.form-3{
+	display: none;
+}
+.form-4{
+	display: none;
+}
+.form-5{
+	display: none;
+}
+.form-6{
+	display: none;
+	background-color: #ccc;
+	height: 400px;
+	width: 600px;
+	margin: 60px;
+    padding: 60px;
+
+}
+.btn-2{
+	display: none;
+}
+.btn-3{
+	float: right;
+}
+.right:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
