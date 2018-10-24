@@ -13,6 +13,7 @@ $(function(){
     	$('.form-'+x).show();
     	$('.text-center').html(x+' out of 5');
     	if(x==6){
+            $('#descricao').hide();
     		$('.col-md-4').hide();
     		$('.text-center').hide();
     		$('.right').attr('disabled','');
