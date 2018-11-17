@@ -4,22 +4,60 @@
 body,html{
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #ffffff;
 }
 
 .container{
-    background-color: #FFF;
+    height:95vh;
+    width: 60vw;
+    border-radius:10px;
+    position:absolute;
+    top:0px;bottom:0px;right:0px;left:0px;
+    margin:auto;
+    background-color: #eeeeee;
+    display: flex;
+    flex-direction:column;
+}
+
+.heading {
+    margin: 15px 0 0 0;
+}
+.logo{
+    max-width: 145px;
 }
 
 .info{
-    background-color: blue;
+    background-color: #0972B9;
     color: #FFF;
-    padding: 5px;
-    font-size: 12px;
+    padding: 0;
+    border-radius: 0 10px 0 10px;
 }
+
+.info > h1{
+    margin: auto!important;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 16px;
+    color: #1c1c1c;
+    margin-top: 34px;
+    font-weight: bold;
+}
+
+#descricao{
+    background: #ccc;
+    margin: auto;
+    padding: 16px 12px 0;
+    border-radius: 10px;
+}
+
 .form-1{
 
 }
+
 .form-2{
 	display: none;
 	}
