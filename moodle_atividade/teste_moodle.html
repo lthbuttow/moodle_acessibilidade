@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="utf-8" />
@@ -6,7 +5,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../moodle_atividade/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
 <div class="container">
@@ -36,75 +35,215 @@
                 <p>What's the greeting to be used en each of the following situations? Select it according to the moment of the day and what is happening. <a href="#">Português</a></p>
             </div>
     </div> 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <form class="form-1">
-        <div class="col-10" id="descricao">
-                <source src="../sounds/dialogue1" type="audio/mpeg">
-            </div>
+        <p>Você chega em casa a noite e encontra seu irmão. O que você diz?</p>
         
             <legend>Opções de resposta</legend>
-                    <input class="left" type="radio" name="Go" value="Good evening">Smith<br>
+                    <input class="right" id="a" type="radio" name="Go" value="right"> <label for="a">Good morning</label><br>
                     <span class="checkmark"></span>
-                    <input class="right" type="radio" name="Go" value="Godd night">Smirt<br>
+                    <input class="left" id="b" type="radio" name="Go" value="left">  <label for="b"> Godd night </label><br>
                     <span class="checkmark"></span>
-                    <input class="left" type="radio" name="Go" value="Good morning">Schmidt<br>
+                    <input class="left" id="c" type="radio" name="Go" value="left">  <label for="c"> Good morning </label><br>
                     <span class="checkmark"></span>
-            <button role="button" class="btn-1" type="button">NEXT</button>
-        
+            <button role="button" class="btn-1" type="button">NEXT</button><br><br>
+            <div class="correct">Você acertou</div> 
+            <div class="wrong">Você errou</div>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </form>
     <form class="form-2">
-        <div class="col-10" id="descricao">
-                <source src="../sounds/dialogue2" type="audio/mpeg">
-            </div>
+        <p>Você esta se despedindo de um amigo e já são 23h. O que você diz?</p>
         <fieldset>
             <legend>Opções de resposta</legend>
-                <input class="left" type="radio" name="Go" value="Good bye">Petersan<br>
-                <input class="right" type="radio" name="Go" value="Godd aftermoon">Peterson<br>
-                <input class="left" type="radio" name="Go" value="Good evening">Petersen
+                <input class="right" id="d" type="radio" name="Go" value="right"> <label for="d">  Good bye </label><br>
+                <input class="left" id="e" type="radio" name="Go" value="left"> <label for="e">  Godd aftermoon </label><br>
+                <input class="left" id="f" type="radio" name="Go" value="left"> <label for="f">  Good evening </label>
         </fieldset>
         <button role="button" class="btn-2" type="button">PREVIOUS</button>
-        <button role="button" class="btn-1" type="button">NEXT</button>
+        <button role="button" class="btn-1" type="button">NEXT</button><br><br>
+        <div class="correct">Você acertou</div>
+        <div class="wrong">Você errou</div>   
         
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </form>
     <form class="form-3">
-       <div class="col-10" id="descricao">
-                <source src="../sounds/dialogue3" type="audio/mpeg">
-            </div>
+        <p>Logo pela manhã você encontra um amigo na rua. O que você diz?</p>
         <fieldset>
             <legend>Opções de resposta</legend>
-                <input class="left" type="radio" name="Go" value="See you later">Norvegian<br>
-                <input class="left" type="radio" name="Go" value="Godd bye"><br>Noregian
-                <input class="right" type="radio" name="Go" value="Good morning">Norwegian
+                <input class="left" id="g" type="radio" name="Go" value="left">  <label for="g"> See you later </label><br>
+                <input class="left" id="h" type="radio" name="Go" value="left">  <label for="h"> Godd bye </label><br>
+                <input class="right" id="i" type="radio" name="Go" value="right">  <label for="i"> Good morning </label>
         </fieldset>
         <button role="button" class="btn-2" type="button">PREVIOUS</button>
-        <button role="button" class="btn-1" type="button">NEXT</button>
-        
+        <button role="button" class="btn-1" type="button">NEXT</button><br><br>
+        <div class="correct">Você acertou</div>
+        <div class="wrong">Você errou</div>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </form>
     <form class="form-4">
-        <div class="col-10" id="descricao">
-                <source src="../sounds/dialogue4" type="audio/mpeg">
-            </div>
+        <p>Você está se despedindo de um amigo, mas vocês vão se encontrar amanhã. O que você diz?</p>
         <fieldset>
             <legend>Opções de resposta</legend>
-                <input class="left" type="radio" name="See" value="See you later"><br>Germany
-                <input class="left" type="radio" name="See" value="See you tomorrow"><br>Jerman
-                <input class="right" type="radio" name="See" value="Good bye">German
+                <input class="left" id="j" type="radio" name="See" value="left"> <label for="j">  See you later </label><br>
+                <input class="right" id="l" type="radio" name="See" value="right">  <label for="l"> See you tomorrow </label><br>
+                <input class="left" id="m" type="radio" name="See" value="left">  <label for="m"> Good bye </label>
         </fieldset>
         <button role="button" class="btn-2" type="button">PREVIOUS</button>
-        <button role="button" class="btn-1" type="button">NEXT</button>
-        
+        <button role="button" class="btn-1" type="button">NEXT</button><br><br>
+        <div class="correct">Você acertou</div>
+        <div class="wrong">Você errou</div>   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </form>
     <form class="form-5">
-        <div class="col-10" id="descricao">
-                <source src="../sounds/dialogue5" type="audio/mpeg">
-            </div>
+        <p>Você chega em seu trabalho as 14h e saúda seu professor. O que você diz?</p>
+        <fieldset>
             <legend>Opções de resposta</legend>
-                <input class="right" type="radio" name="Good" value="Good morning">Timothy<br>
-                <input class="left" type="radio" name="Good" value="Good night">Timothi<br>
-                <input class="left" type="radio" name="Good" value="Good evening">Timoty
+                <input class="left" id="n" type="radio" name="Good" value="left"> <label for="n"> Good morning </label><br>
+                <input class="left" id="o" type="radio" name="Good" value="left"> <label for="o"> Good night </label><br>
+                <input class="right" id="p" type="radio" name="Good" value="right"> <label for="p"> Good evening </label>
         </fieldset>
         <button role="button" class="btn-2" type="button">PREVIOUS</button>
-        <button role="button" class="btn-1" type="button">NEXT</button>
-        
+        <button role="button" class="btn-1" type="button">NEXT</button><br><br>
+        <div class="correct">Você acertou</div> 
+        <div class="wrong">Você errou</div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </form>
     <form class="form-6">
         <fieldset>
@@ -118,8 +257,8 @@
     <hr>
     <p class="text-center">1 out of 5</p>
 
+
 </div>
-</section>  
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
