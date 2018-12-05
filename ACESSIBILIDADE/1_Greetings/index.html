@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title lang="en">Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row heading">
+            <div class="info col-md-6">
+                <h1>ENGLISH - LESSON 01 - LEARNING ACTIVITY</h1>
+            </div>
+            <div class="col-md-6 logo-sf">
+                <img src="marca-sem-fronteiras.png" class="logo" alt="Logotipo Sem fronteiras.">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="subtitle" lang="en">GREETINGS</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <img class="btn-speeding-2 btn" src="../img/speaker.png"><br><br>
+                <audio id="audioTitle">
+                    <source src="audio_enunciado.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="col-10" id="descricao">
+                <p lang="en">What's the greeting to be used en each of the following situations? Select it according to
+                    the moment of the day and what is happening.
+                    <a href="#">Português</a>
+                </p>
+                <h3 class="sr-only">Qual é a saudação a ser usada em cada uma das situações a seguir? Selecione a
+                    saudação de acordo com o momento do dia e o que está acontecendo.</h3>
+            </div>
+        </div>
+        <form class="form-1">
+            <p>Você chega em casa a noite e encontra seu irmão. O que você diz?</p>
+
+            <legend class="sr-only" class="sr-only">Opções de resposta</legend>
+
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="Go" class="custom-control-input" value="Good evening">
+                <label class="custom-control-label" for="customRadio1" lang="en"> Good evening</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="Go" value="Good night" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2" lang="en"> Good night</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio3" name="Go" value="Good morning" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio3" lang="en"> Good morning</label>
+            </div>
+            <button role="button" class="btn-1" type="button" lang="en">NEXT</button>
+
+        </form>
+        <form class="form-2">
+            <p>Você esta se despedindo de um amigo e já são 23h. O que você diz?</p>
+            <fieldset>
+                <legend class="sr-only">Opções de resposta</legend>
+                <input class="right" id="d" type="radio" name="Go" value="right"> <label for="d" lang="en"> Good bye </label><br>
+                <input class="left" id="e" type="radio" name="Go" value="left"> <label for="e" lang="en"> Godd aftermoon </label><br>
+                <input class="left" id="f" type="radio" name="Go" value="left"> <label for="f" lang="en"> Good night </label>
+            </fieldset>
+            <button role="button" class="btn-2" type="button" lang="en">PREVIOUS</button>
+            <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
+            <div class="correct">Você acertou</div>
+            <div class="wrong">Você errou</div>
+
+        </form>
+        <form class="form-3">
+            <p>Logo pela manhã você encontra um amigo na rua. O que você diz?</p>
+            <fieldset>
+                <legend class="sr-only">Opções de resposta</legend>
+                <input class="left" id="g" type="radio" name="Go" value="left"> <label for="g" lang="en"> See you later </label><br>
+                <input class="left" id="h" type="radio" name="Go" value="left"> <label for="h" lang="en"> Good bye </label><br>
+                <input class="right" id="i" type="radio" name="Go" value="right"> <label for="i" lang="en"> Good morning </label>
+            </fieldset>
+            <button role="button" class="btn-2" type="button" lang="en">PREVIOUS</button>
+            <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
+            <div class="correct">Você acertou</div>
+            <div class="wrong">Você errou</div>
+        </form>
+        <form class="form-4">
+            <p>Você está se despedindo de um amigo, mas vocês vão se encontrar amanhã. O que você diz?</p>
+            <fieldset>
+                <legend class="sr-only">Opções de resposta</legend>
+                <input class="left" id="j" type="radio" name="See" value="left"> <label for="j" lang="en"> See you later </label><br>
+                <input class="right" id="l" type="radio" name="See" value="right"> <label for="l" lang="en"> See you tomorrow
+                </label><br>
+                <input class="left" id="m" type="radio" name="See" value="left"> <label for="m" lang="en"> Good bye </label>
+            </fieldset>
+            <button role="button" class="btn-2" type="button" lang="en">PREVIOUS</button>
+            <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
+            <div class="correct">Você acertou</div>
+            <div class="wrong">Você errou</div>
+
+        </form>
+        <form class="form-5">
+            <p>Você chega em seu trabalho as 14h e saúda seu professor. O que você diz?</p>
+            <fieldset>
+                <legend class="sr-only">Opções de resposta</legend>
+                <input class="left" id="n" type="radio" name="Good" value="left"> <label for="n" lang="en"> Good morning </label><br>
+                <input class="left" id="o" type="radio" name="Good" value="left"> <label for="o" lang="en"> Good night </label><br>
+                <input class="right" id="p" type="radio" name="Good" value="right"> <label for="p" lang="en"> Good evening
+                </label>
+            </fieldset>
+            <button role="button" class="btn-2" type="button" lang="en">PREVIOUS</button>
+            <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
+            <div class="correct">Você acertou</div>
+            <div class="wrong">Você errou</div>
+        </form>
+        <form class="form-6">
+            <fieldset>
+                <legend class="sr-only">Final da atividade</legend>
+                <h3>Se você consequiu associar os momentos do dia ás saudações correspondentes, parabéns! Mas, se houve
+                    alguma dificuldade, consulte o caderno de conteúdos.</h3>
+            </fieldset>
+
+            <button role="button" class="btn-3" type="button" lang="en">CHECK</button>
+
+        </form>
+        <hr>
+        <p class="text-center" lang="en">1 out of 5</p>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
