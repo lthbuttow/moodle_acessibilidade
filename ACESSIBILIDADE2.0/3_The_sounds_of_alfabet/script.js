@@ -69,10 +69,10 @@ $(function(){
         audio_enunciado.play();
     });
     $('#descricao').bind('mouseover',function(){
-        $('#descricao p ').html('Qual é a saudação a ser usada em cada uma das situações a seguir? Selecione a saudação de acordo com o momento do dia e o que está acontecendo.');
+        $('#descricao p ').html('Que tal praticar as letras do alfabeto? Ouça o som das letras do alfabeto e escreva a letra que você ouvir no espaço ao lado.');
     });
     $('#descricao').bind('mouseout',function(){
-        $('#descricao p ').html('<p>What\'s the greeting to be used en each of the following situations? Select it according to the moment of the day and what is happening. <a href="#">Português</a></p>');
+        $('#descricao p ').html('<p>How about practicing the letters of the alphabet? Listen to the sound of the letters of the letters of the alphabet and write the letter you hear in the box. <a href="#">Português</a></p>');
     });
     $('.btn-'+x).bind('click',function(){
     	$('.form-'+x).hide();
@@ -97,9 +97,16 @@ $(function(){
     	$('.btn-3').bind('click',function(){
             
     		$('.form-'+x).hide();
-    		x=1;
+    		x++;
     		$('.text-center').show();
     		$('.text-center').html(x+' out of n');
+        for (var i = 0; i < 12; i++) {
+          if($('#input-audio-'+i).val()==$('#resp-input-audio-'+i).val()){
+            $('.span-audio-'+i).html('Correto');
+          }else{
+            $('.span-audio-'+i).html('Errado');
+          }
+        }
     		$('.form-'+x).show();
     	});
     });
