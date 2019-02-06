@@ -25,6 +25,10 @@ input{
 .btn{
     cursor: pointer;
 }
+.btn-img{
+    border: none;
+    background-color: transparent;
+}
 
 .container{
     height:95vh;
