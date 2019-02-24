@@ -60,55 +60,75 @@ $(function () {
 
 			$('.form-4').html('<h3>Confira o resultado</h3>');	
 
-			if (resp1 == 1 || resp1 == 'um') {
-				$('.form-4').append('<p> Primeiro espaço - Você respondeu: <strong>' + resp1 + '. </strong><em>A Resposta está Correta!</em></p>');
+			if (resp1 == 2 || resp1 == 'dois') {
+				$('.form-4').append('<p> Primeira atividade - Você respondeu: <strong>' + resp1 + '. </strong><em>A Resposta está Correta!</em></p>');
 			}
 			else if (resp1 == '') {
-				$('.form-4').append('<p> Primeiro espaço - Você Não preencheu este campo!');
+				$('.form-4').append('<p> Primeira atividade - Você Não preencheu este campo!');
 			}
 			else {
-				$('.form-4').append('<p> Primeiro espaço - Você respondeu: <strong>' + resp1 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 1></p>');			
+				$('.form-4').append('<p> Primeira atividade - Você respondeu: <strong>' + resp1 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 1 - Where are you from?</p>');			
 			}		
 
-			if (resp2 == 'Good bye') {
+			if (resp2 == 1 || resp2 == 'um') {
 				$('.form-4').append('<p> Segunda atividade - Você respondeu: <strong>' + resp2 + '. </strong><em>A Resposta está Correta!</em></p>');
 			}
 			else if (resp2 == '') {
 				$('.form-4').append('<p> Segunda atividade - Você Não preencheu este campo!');
 			}
 			else {
-				$('.form-4').append('<p> Segunda atividade - Você respondeu: <strong>' + resp2 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria Good bye.</p>');			
+				$('.form-4').append('<p> Segunda atividade - Você respondeu: <strong>' + resp2 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 2 - What\'s your name?</p>');			
 			}
 
-			if (resp3 == 'Good morning') {
+			if (resp3 == '3' || resp3 == 'tres') {
 				$('.form-4').append('<p> Terceira atividade - Você respondeu: <strong>' + resp3 + '. </strong><em>A Resposta está Correta!</em></p>');
 			}
 			else if (resp3 == '') {
 				$('.form-4').append('<p> Terceira atividade - Você Não preencheu este campo!');
 			}
 			else {
-				$('.form-4').append('<p> Terceira atividade - Você respondeu: <strong>' + resp3 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria Good morning.</p>');			
+				$('.form-4').append('<p> Terceira atividade - Você respondeu: <strong>' + resp3 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 3 -  Is Victor your host brother?</p>');			
 			}
 
-			if (resp4 == 'See you tomorrow') {
+			if (resp4 == '4' || resp4 == 'quatro') {
 				$('.form-4').append('<p> Quarta atividade - Você respondeu: <strong>' + resp4 + '. </strong><em>A Resposta está Correta!</em></p>');
 			}
 			else if (resp4 == '') {
 				$('.form-4').append('<p> Quarta atividade - Você Não preencheu este campo!');
 			}
 			else {
-				$('.form-4').append('<p> Quarta atividade - Você respondeu: <strong>' + resp4 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria See you tomorrow.</p>');			
+				$('.form-4').append('<p> Quarta atividade - Você respondeu: <strong>' + resp4 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 4 - Is Whashington, D.C. the capital of the United States?</p>');			
 			}
 
-			if (resp5 == 'Good afternoon') {
+			if (resp5 == '6' || resp5 == 'seis') {
 				$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp5 + '. </strong><em>A Resposta está Correta!</em></p>');
 			}
 			else if (resp5 == '') {
 				$('.form-4').append('<p> Quinta atividade - Você Não preencheu este campo!');
 			}
 			else {
-				$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp5 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria Good afternoon.</p>');	
+				$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp5 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 6 - No, I\'m from Germany.</p>');	
 			}
+
+			if (resp6 == '5' || resp6 == 'cinco') {
+				$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp6 + '. </strong><em>A Resposta está Correta!</em></p>');
+			}
+			else if (resp6 == '') {
+				$('.form-4').append('<p> Quinta atividade - Você Não preencheu este campo!');
+			}
+			else {
+				$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp6 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 5 - It\'s rosa.souza@facul24.com.br</p>');	
+			}
+
+			if (resp7 == '7' || resp7 == 'sete') {
+				$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp7 + '. </strong><em>A Resposta está Correta!</em></p>');
+			}
+			else if (resp7 == '') {
+				$('.form-4').append('<p> Quinta atividade - Você Não preencheu este campo!');
+			}
+			else {
+				$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp7 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 7 - No, she isn\'t.</p>');	
+			}						
 
 		} else {
 			$('.form-4').html('<h3>Você não preencheu todas as questões. Clique no botão abaixo para tentar novamente!</h3>');
@@ -124,6 +144,13 @@ $(function () {
 		$('.form-' + x).show();
 		$('.text-center').html(x + ' <span lang="en">out of 4</span>');
 	});
+
+  $('#bt-enunciado').bind('keyup', function(e) {
+  	console.log(e.keyCode);
+  	if (e.keyCode == 13 || e.keyCode == 32) {
+  	$('.btn-speeding-2').trigger('click');
+  	}
+  });
 
 var i = 0;
 $('.btn-speeding-2').on('click', function () {

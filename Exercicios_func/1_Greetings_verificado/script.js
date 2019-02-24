@@ -11,7 +11,7 @@ $(function () {
 		x++;
 
 		$('.form-' + x).show();
-		$('.text-center').html(x + ' out of 6');
+		$('.text-center').html(x + ' <span lang="en">out of 6</span>');
 		if (x == 6) {
 			$('#descricao').hide();
 			// $('.text-center').hide();
@@ -119,8 +119,41 @@ $(function () {
 		$('.text-center').html(x + ' <span lang="en">out of 6</span>');
 	});
 
+// var i = 0;
+// $('.btn-speeding-2').on('click', function () {
+	
+// 		if (i == 0) {
+// 			document.getElementById('audioTitle').play();
+// 			i++;
+// 		} else{
+// 			document.getElementById('audioTitle').pause();
+// 			i--;
+// 		}
+	
+// });
+// $('.bt-enunciado').bind('click', function (e) {
+// 	console.log(e);
+// 		if (1 == 1) {
+// 			if (i == 0) {
+// 				document.getElementById('audioTitle').play();
+// 				i++;
+// 			} else{
+// 				document.getElementById('audioTitle').pause();
+// 				i--;
+// 			}
+// 		}
+// });
+
+  $('#bt-enunciado').bind('keyup', function(e) {
+  	console.log(e.keyCode);
+  	if (e.keyCode == 13 || e.keyCode == 32) {
+  	$('.btn-speeding-2').trigger('click');
+  	}
+  });
+
 var i = 0;
-$('.btn-speeding-2').on('click', function () {
+$('.btn-speeding-2').bind('click', function (e) {
+
 	if (i == 0) {
 		document.getElementById('audioTitle').play();
 		i++;
@@ -128,5 +161,5 @@ $('.btn-speeding-2').on('click', function () {
 		document.getElementById('audioTitle').pause();
 		i--;
 	}
-
+		
 });

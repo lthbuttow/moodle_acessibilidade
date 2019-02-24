@@ -72,3 +72,7 @@ h2{
     position: absolute;
     display: none;
 }
+.enunciado .col-1 button {
+	background-color: transparent;
+	border: none;
+}

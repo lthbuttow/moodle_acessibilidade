@@ -60,6 +60,7 @@ h2{
 	width: 600px;
 	margin: 60px;
     padding: 60px;
+
 }
 .form-7{
 	display: none;
@@ -68,6 +69,7 @@ h2{
 	width: 800px;
 	margin: 60px;
     padding: 60px;
+    overflow: scroll;
 
 }
 .btn-2{

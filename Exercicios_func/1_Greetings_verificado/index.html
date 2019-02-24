@@ -31,10 +31,13 @@
         </div>
         <div class="row enunciado">
             <div class="col-1">
-                <img class="btn-speeding-2 btn" src="../img/speaker.png"><br><br>
-                <audio id="audioTitle">
-                    <source src="audio_enunciado.mp3" type="audio/mpeg">
-                </audio>
+                <label for="bt-enunciado" class="sr-only">Ouvir Enunciado</label>
+                <button id="bt-enunciado">
+                    <img class="btn-speeding-2 btn" src="speaker.png"><br><br>
+                    <audio id="audioTitle">
+                        <source src="audio_enunciado.mp3" type="audio/mpeg">
+                    </audio>
+                </button>    
             </div>
             <div class="col-10" id="descricao">
                 <p lang="en">What's the greeting to be used in each of the following situations? Select it according to
@@ -68,7 +71,8 @@
 
         </div>
         <div class="form-2">
-            <p>Você está se despedindo de um amigo e já são 23h. O que você diz?</p>
+            <h2 class="sr-only">Segunda página carregada</h2>
+            <p tabindex="1">Você está se despedindo de um amigo e já são 23h. O que você diz?</p>
             <fieldset>
 
                 <legend class="sr-only">Opções de resposta</legend>
