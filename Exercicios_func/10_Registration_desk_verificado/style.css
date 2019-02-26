@@ -81,7 +81,10 @@ h2{
     position: absolute;
     display: none;
 }
-.enunciado .col-1 button {
+.enunciado .col-1 button, .btn-enun {
 	background-color: transparent;
 	border: none;
+}
+.inline {
+	display: inline;
 }

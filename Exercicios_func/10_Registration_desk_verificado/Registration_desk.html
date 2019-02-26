@@ -29,7 +29,7 @@
                 <hr>
             </div>
         </div>
-        <div class="row">
+        <div class="row enunciado">
             <div class="col-1">
                 <label for="bt-enunciado" class="sr-only">Ouvir Enunciado</label>
                 <button id="bt-enunciado">
@@ -48,80 +48,91 @@
         <form class="form">
             <div class="form-1">
                 <br><br>
-                <p lang="en"><img class="btn-speeding-1 btn" src="../img/speaker.png">Which moment of the day is it?</p><br><br>
-                <audio id="audio1">
-                    <source src="../sounds/audio/registrationdesk/question.mp3" type="audio/mpeg"></audio>
+                <button id="bt-enunc" class="btn-enun" type="button">
+                    <img class="btn-speeding-1 btn inline" src="speaker.png">
+                    <audio id="audio1">
+                        <source src="question.mp3" type="audio/mpeg">
+                    </audio>
+                </button>    
+                <p lang="en" class="inline">Which moment of the day is it?</p>      
                 <fieldset>
-                    <input class="left" type="radio" name="Go" value="left" id="1"> <label for="1" lang="en">Afternoon</label><br>
-                    <input class="right" type="radio" name="Go" value="right" id="2"> <label for="2" lang="en">Morning</label><br>
-                    <input class="left" type="radio" name="Go" value="left" id="3"> <label for="3" lang="en">Afternoon</label><br>
+                    <input class="left" type="radio" name="c1" value="Afternoon" id="1"> <label for="1" lang="en">Afternoon</label><br>
+                    <input class="right" type="radio" name="c1" value="Morning" id="2"> <label for="2" lang="en">Morning</label><br>
+                    <input class="left" type="radio" name="c1" value="Night" id="3"> <label for="3" lang="en">Night</label><br>
                 </fieldset>
                 <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
-                <div class="correct">Você acertou</div>
-                <div class="wrong">Você errou</div>
+
             </div>
             <div class="form-2">
                 <br><br>
-                <p lang="en"><img class="btn-speeding-1 btn" src="../img/speaker.png">What's the student's last name?</p><br><br>
-                <audio id="audio1">
-                    <source src="../sounds/audio/registrationdesk/question.mp3" type="audio/mpeg"></audio>
+                <button id="bt-enunc" class="btn-enun" type="button">
+                    <img class="btn-speeding-1 btn inline" src="speaker.png">
+                    <audio id="audio1">
+                        <source src="question.mp3" type="audio/mpeg">
+                    </audio>
+                </button>    
+                <p lang="en" class="inline">What's the student's last name?</p>                 
                 <fieldset>			
-                    <input class="left" type="radio" name="Go" value="left" id="4"> <label for="4" lang="en">Chuartzbold</label><br>
-                    <input class="right" type="radio" name="Go" value="right" id="5"> <label for="5" lang="en">Schwartzbold</label><br>
-                    <input class="left" type="radio" name="Go" value="left" id="6"> <label for="6" lang="en">Shwartsbold</label><br>
+                    <input class="left" type="radio" name="c2" value="Chuartzbold" id="4"> <label for="4" lang="en">Chuartzbold</label><br>
+                    <input class="right" type="radio" name="c2" value="Schwartzbold" id="5"> <label for="5" lang="en">Schwartzbold</label><br>
+                    <input class="left" type="radio" name="c2" value="Shwartsbold" id="6"> <label for="6" lang="en">Shwartsbold</label><br>
                 </fieldset>
                 <button role="button" class="btn-2" type="button" lang="en">PREVIOUS</button>
                 <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
-                <div class="correct">Você acertou</div>
-                <div class="wrong">Você errou</div>
 
             </div>
             <div class="form-3">
                 <br><br>
-                <p lang="en"><img class="btn-speeding-1 btn" src="../img/speaker.png">What's her first name?</p><br><br>
-                <audio id="audio1">
-                    <source src="../sounds/audio/registrationdesk/question.mp3" type="audio/mpeg"></audio>
+                <button id="bt-enunc" class="btn-enun" type="button">
+                    <img class="btn-speeding-1 btn inline" src="speaker.png">
+                    <audio id="audio1">
+                        <source src="question.mp3" type="audio/mpeg">
+                    </audio>
+                </button>                  
+                <p lang="en" class="inline">What's her first name?</p>
                 <fieldset>
-                    <input class="left" type="radio" name="Go" value="left" id="7"> <label for="7" lang="en">Adel</label><br>
-                    <input class="right" type="radio" name="Go" value="right" id="8"> <label for="8" lang="en">Adhelle</label><br>
-                    <input class="left" type="radio" name="Go" value="left" id="9"> <label for="9" lang="en">Adhell</label><br>            	
+                    <input class="left" type="radio" name="c3" value="Adel" id="7"> <label for="7" lang="en">Adel</label><br>
+                    <input class="right" type="radio" name="c3" value="Adhelle" id="8"> <label for="8" lang="en">Adhelle</label><br>
+                    <input class="left" type="radio" name="c3" value="Adhell" id="9"> <label for="9" lang="en">Adhell</label><br>
                 </fieldset>
                 <button role="button" class="btn-2" type="button" lang="en">PREVIOUS</button>
                 <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
-                <div class="correct">Você acertou</div>
-                <div class="wrong">Você errou</div>
 
             </div>
             <div class="form-4">
                 <br><br>
-                <p lang="en"><img class="btn-speeding-1 btn" src="../img/speaker.png">Where's she from?</p><br><br>
-                <audio id="audio1">
-                    <source src="../sounds/audio/registrationdesk/question.mp3" type="audio/mpeg"></audio>
+                <button id="bt-enunc" class="btn-enun" type="button">
+                    <img class="btn-speeding-1 btn inline" src="speaker.png">
+                    <audio id="audio1">
+                        <source src="question.mp3" type="audio/mpeg">
+                    </audio>
+                </button>                  
+                <p lang="en" class="inline">Where's she from?</p>
                 <fieldset>
-                    <input class="left" type="radio" name="Go" value="left" id="10"> <label for="10" lang="en">Italy</label><br>
-                    <input class="right" type="radio" name="Go" value="right" id="11"> <label for="11" lang="en">Germany</label><br>
-                    <input class="left" type="radio" name="Go" value="left" id="12"> <label for="12" lang="en">Norway</label><br>
+                    <input class="left" type="radio" name="c4" value="Italy" id="10"> <label for="10" lang="en">Italy</label><br>
+                    <input class="right" type="radio" name="c4" value="Germany" id="11"> <label for="11" lang="en">Germany</label><br>
+                    <input class="left" type="radio" name="c4" value="Norway" id="12"> <label for="12" lang="en">Norway</label><br>
                 </fieldset>
                 <button role="button" class="btn-2" type="button" lang="en">PREVIOUS</button>
                 <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
-                <div class="correct">Você acertou</div>
-                <div class="wrong">Você errou</div>
 
             </div>
             <div class="form-5">
                 <br><br>
-                <p lang="en"><img class="btn-speeding-1 btn" src="../img/speaker.png">What's her email address?</p><br><br>
-                <audio id="audio1">
-                    <source src="../sounds/audio/registrationdesk/question.mp3" type="audio/mpeg"></audio></audio>
+                <button id="bt-enunc" class="btn-enun" type="button">
+                    <img class="btn-speeding-1 btn inline" src="speaker.png">
+                    <audio id="audio1">
+                        <source src="question.mp3" type="audio/mpeg">
+                    </audio>
+                </button>                  
+                <p lang="en" class="inline">What's her email address?</p>
                 <fieldset>
-                    <input class="left" type="radio" name="Go" value="left" id="13"> <label for="13" lang="en">adhel@hitmail.dc</label><br>
-                    <input class="right" type="radio" name="Go" value="right" id="14"> <label for="14" lang="en">adhels@hitmail.de</label><br>
-                    <input class="left" type="radio" name="Go" value="left" id="15"> <label for="15" lang="en">adhels@hitmail.dc</label><br>
+                    <input class="left" type="radio" name="c5" value="adhel@hitmail.dc" id="13"> <label for="13" lang="en">adhel@hitmail.dc</label><br>
+                    <input class="right" type="radio" name="c5" value="adhels@hitmail.de" id="14"> <label for="14" lang="en">adhels@hitmail.de</label><br>
+                    <input class="left" type="radio" name="c5" value="adhels@hitmail.dc" id="15"> <label for="15" lang="en">adhels@hitmail.dc</label><br>
                 </fieldset>
                 <button role="button" class="btn-2" type="button" lang="en">PREVIOUS</button>
                 <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
-                <div class="correct">Você acertou</div>
-                <div class="wrong">Você errou</div>
 
             </div>
             <div class="form-6">
