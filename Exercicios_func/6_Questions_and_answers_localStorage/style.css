@@ -42,11 +42,11 @@ h2{
 }
 
 .form-2{
-	display: none;
+
 	}
 	
 .form-3{
-	display: none;
+	
 	background-color: #ccc;
 	height: 400px;
 	width: 600px;
@@ -56,16 +56,19 @@ h2{
 .form-4{
 	display: none;
 	background-color: #ccc;
-	height: 600px;
+	height: auto;
 	width: 800px;
-	margin: 60px;
+	margin-left: 2%;
     padding: 60px;
 }
-.btn-2{
-	display: none;
+.btn-restart{
+	
+	top: 85%;
+	position: absolute;
+	
 }
 .btn-3{
-	float: right;
+	
 }
 .right:after {
     content: "";

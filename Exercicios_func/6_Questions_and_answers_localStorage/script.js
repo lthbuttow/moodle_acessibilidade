@@ -7,7 +7,25 @@ $(function () {
 		$('#descricao p ').html('These are fundamental questions to get to know people. In order to practice their use, match the answers to the corresponding questions.<a href="#">Português</a>');
 	});
 	$('.btn-1').bind('click', function () {
+		localStorage.setItem('input_1',document.getElementById('1').value);
+		localStorage.setItem('input_2',document.getElementById('2').value);
+		localStorage.setItem('input_3',document.getElementById('3').value);
+		localStorage.setItem('input_4',document.getElementById('4').value);
+		window.location.href = 'page_2.html';
 	});
+	$('.btn-2').bind('click', function () {
+		localStorage.setItem('input_5',document.getElementById('5').value);
+		localStorage.setItem('input_6',document.getElementById('6').value);
+		localStorage.setItem('input_7',document.getElementById('7').value);
+		window.location.href = 'result.html';
+	});
+	$('.btn-restart').bind('click',function(){
+		for (var i = 1; i <= 7; i++) {
+			localStorage.removeItem('input_'+i);
+		}
+		window.location.href = "index.html";
+
+	})
 });
 
 $('.btn-result').bind('click', function (e){
@@ -18,26 +36,21 @@ $('.btn-result').bind('click', function (e){
 	$('.form-4').show();
 
 
-	if (dados.length == 7) {
 
-		var resp1 = '';
-		var resp2 = '';
-		var resp3 = '';
-		var resp4 = '';
-		var resp5 = '';
-		var resp6 = '';
-		var resp7 = '';			
+	resp1 = localStorage.getItem('input_1');
+	resp2 = localStorage.getItem('input_2');
+	resp3 = localStorage.getItem('input_3');
+	resp4 = localStorage.getItem('input_4');
+	resp5 = localStorage.getItem('input_5');
+	resp6 = localStorage.getItem('input_6');
+	resp7 = localStorage.getItem('input_7');
 
-		resp1 = dados[0].value;
-		resp2 = dados[1].value;
-		resp3 = dados[2].value;
-		resp4 = dados[3].value;
-		resp5 = dados[4].value;
-		resp6 = dados[5].value;
-		resp7 = dados[6].value;			
+console.log(resp1+'-'+resp2+'-'+resp3+'-'+resp4+'-'+resp5+'-'+resp6+'-'+resp7)
 
-
-
+	if (resp1 != null || resp2 != null || resp3 != null || resp4 != null || resp5 != null || resp6 != null || resp7 != null) {
+		$('.btn-restart').css({
+			"top":"110%"
+		});
 		$('.form-4').append('<h3>Confira o resultado</h3>');	
 
 		if (resp1 == 2 || resp1 == 'dois') {
@@ -91,31 +104,29 @@ $('.btn-result').bind('click', function (e){
 		}
 
 		if (resp6 == '5' || resp6 == 'cinco') {
-			$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp6 + '. </strong><em>A Resposta está Correta!</em></p>');
+			$('.form-4').append('<p> Sexta atividade - Você respondeu: <strong>' + resp6 + '. </strong><em>A Resposta está Correta!</em></p>');
 		}
 		else if (resp6 == '') {
-			$('.form-4').append('<p> Quinta atividade - Você Não preencheu este campo!');
+			$('.form-4').append('<p> Sexta atividade - Você Não preencheu este campo!');
 		}
 		else {
-			$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp6 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 5 - It\'s rosa.souza@facul24.com.br</p>');	
+			$('.form-4').append('<p> Sexta atividade - Você respondeu: <strong>' + resp6 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 5 - It\'s rosa.souza@facul24.com.br</p>');	
 		}
 
 		if (resp7 == '7' || resp7 == 'sete') {
-			$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp7 + '. </strong><em>A Resposta está Correta!</em></p>');
+			$('.form-4').append('<p> Sétima atividade - Você respondeu: <strong>' + resp7 + '. </strong><em>A Resposta está Correta!</em></p>');
 		}
 		else if (resp7 == '') {
-			$('.form-4').append('<p> Quinta atividade - Você Não preencheu este campo!');
+			$('.form-4').append('<p> Sétima atividade - Você Não preencheu este campo!');
 		}
 		else {
-			$('.form-4').append('<p> Quinta atividade - Você respondeu: <strong>' + resp7 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 7 - No, she isn\'t.</p>');	
+			$('.form-4').append('<p> Sétima atividade - Você respondeu: <strong>' + resp7 + '. </strong><em>A Resposta está Errada!</em> A resposta correta seria 7 - No, she isn\'t.</p>');	
 		}						
 
 	} else {
 		$('.form-4').html('<h3>Você não preencheu todas as questões. Clique no botão abaixo para tentar novamente!</h3>');
-		$('.form-4').append('<a href="Questions_and_answers.html" role="button" class="btn btn-primary">Reiniciar</a>');
-
-	}						
-	
+		$('.form-4').append('<a href="index.html" role="button" class="btn btn-primary">Reiniciar</a>');
+	}	
 });
 
 $('#bt-enunciado').bind('keyup', function(e) {
