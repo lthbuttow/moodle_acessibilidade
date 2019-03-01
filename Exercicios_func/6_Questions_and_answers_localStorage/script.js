@@ -47,7 +47,7 @@ $('.btn-result').bind('click', function (e){
 
 console.log(resp1+'-'+resp2+'-'+resp3+'-'+resp4+'-'+resp5+'-'+resp6+'-'+resp7)
 
-	if (resp1 != null || resp2 != null || resp3 != null || resp4 != null || resp5 != null || resp6 != null || resp7 != null) {
+	if (resp1 != '' || resp2 != '' || resp3 != '' || resp4 != '' || resp5 != '' || resp6 != '' || resp7 != '') {
 		$('.btn-restart').css({
 			"top":"110%"
 		});
