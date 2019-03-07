@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title lang="en">Student Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row heading">
+            <div class="info col-md-6">
+                <h1 lang="en">ENGLISH - LESSON 01 - LEARNING ACTIVITY</h1>
+                <span class="sr-only">Terceira Página carregada, você está na terceira atividade.</span>
+            </div>
+            <div class="col-md-6 logo-sf">
+                <img src="marca-sem-fronteiras.png" class="logo" alt="Logotipo Sem fronteiras.">
+            </div>
+        </div>
+        <div class="row enunciado">
+            <div class="col-md-12">
+                <h2 class="subtitle" lang="en">STUDENT CARD</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row enunciado">
+            <div class="col-1">
+                <label for="bt-enunciado" class="sr-only">Ouvir Enunciado</label>
+                <button id="bt-enunciado">
+                    <img class="btn-speeding-2 btn" src="speaker.png"><br><br>
+                    <audio id="audioTitle">
+                        <source src="audio_enunciado.mp3" type="audio/mpeg">
+                        </audio>
+                    </button> 
+                </div>
+                <div class="col-10" id="descricao">
+                    <p lang="en">The student card is an essential document. It's important that you always keep it with you. Read Rosa's student ID card and say if the sentences are true or false according to the information on the card.<a href="#">Português</a>
+                    </p>
+                    <h3 class="sr-only">A carteira estudantil é um documento essencial. É importante que você sempre a tenha. Leia o cartão estudantil de Rosa e diga se as frases são verdadeiras ou falsas de acordo com a informação contida na carteirinha.</h3>
+                </div>
+            </div>
+            <form class="form">
+
+                <div class="form-3">
+                   <br><br>
+                   <p lang="en">COLUMBUS COLLEGE OF CHICAGO <br>
+                    Adress: 32 HILL ROAD, CHICAGO<br>
+                    Age: 22<br>
+                    Country: BRAZIL<br>
+                    Phone Number: 03088979555<br>
+                    Surname: SOUZA<br>
+                    First name: ROSA<br>
+                    Email:rosa.souza@facul24.com.br<br>
+                </p><br><br>
+                <fieldset>
+                    <p lang="en">She isn't from Brazil.</p>
+                    <div class="custom-control custom-radio">
+                        <input class="custom-control-input" type="radio" name="local" value="false" id="f"> <label for="f" lang="en" class="custom-control-label">False</label><br>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input class="custom-control-input" type="radio" name="local" value="true" id="t"> <label for="t" lang="en" class="custom-control-label">True</label>
+                    </div>
+                </fieldset><br>
+                <button role="button" class="btn-3" type="button" lang="en">NEXT</button><br><br>
+
+            </div>        
+
+        </form>
+
+        <hr>
+        <p class="text-center">3 out of 6</p>
+
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
