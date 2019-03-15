@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title lang="en">The sounds of the alphabet</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row heading">
+            <div class="info col-md-6">
+                <h1 lang="en">ENGLISH - LESSON 01 - LEARNING ACTIVITY</h1>
+            </div>
+            <div class="col-md-6 logo-sf">
+                <img src="marca-sem-fronteiras.png" class="logo" alt="Logotipo Sem fronteiras.">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="subtitle" lang="en">THE SOUNDS OF THE ALPHABET</h2>
+                <hr>
+            </div>
+        </div>
+        <div class="row enunciado">
+            <div class="col-1">
+                <label for="bt-enunciado" class="sr-only">Ouvir Enunciado</label>
+                <button id="bt-enunciado">
+                    <img class="btn-speeding-2 btn" src="speaker.png"><br><br>
+                    <audio id="audioTitle">
+                        <source src="thesoundofalfabet/audio_enunciado.mp3" type="audio/mpeg">
+                    </audio>
+                </button> 
+            </div>
+            <div class="col-10" id="descricao">
+                <p lang="en">How about practicing the letters of the alphabet? Listen to the letters of the alphabet and write the letter you hear in the box.<a href="#">Português</a>
+                </p>
+                <h3 class="sr-only">Que tal praticar as letras do alfabeto? Ouça o som das letras do alfabeto e descreva a letra que você ouvir no espaço ao lado.</h3>
+            </div>
+        </div>
+        <form class="form">
+            <div class="form-1">
+                <br><br>
+                    <audio id="audio1-1"><source src="thesoundofalfabet/audio1-1.mp3" type="audio/mpeg"></audio>
+                    <audio id="audio1-2"><source src="thesoundofalfabet/audio1-2.mp3" type="audio/mpeg"></audio>
+                    <audio id="audio1-3"><source src="thesoundofalfabet/audio1-3.mp3" type="audio/mpeg"></audio>
+                    <audio id="audio1-4"><source src="thesoundofalfabet/audio1-4.mp3" type="audio/mpeg"></audio>
+                    <button class="btn-img img1 "><img class="btn-audio1-1 btn" src="../img/speaker.png"></button><input type="text" id="input-audio-1" name="r1">
+                    <button class="btn-img img2"><img class="btn-audio1-2 btn" src="../img/speaker.png"></button><input type="text" id="input-audio-2" name="r2">
+                    <button class="btn-img img3"><img class="btn-audio1-3 btn" src="../img/speaker.png"></button><input type="text" id="input-audio-3" name="r3">
+                    <button class="btn-img img4"><img class="btn-audio1-4 btn" src="../img/speaker.png"></button><input type="text" id="input-audio-4" name="r4"><br><br>
+                    
+                <button role="button" class="btn-1" type="button" lang="en">NEXT</button><br><br>
+            </div>
+             
+           
+            <div class="form-2">
+                <fieldset>
+                    <legend class="sr-only">THE SOUNDS OF THE ALPHABET</legend>
+                    <h3 style="text-align: center;">Se você não consequiu associar as letras corretamente não desanime. A prática é fundamental para reconhecer os sons, portato, que tal ouvir mais um pouco a pronúncia das letras?.</h3>
+                </fieldset>
+                <button role="button" class="btn-3" type="submit" lang="en">CHECK</button>
+            </div>
+        </form>    
+        <div class="form-3">
+            <div class="check"></div>
+            <a href="http://www.etecacessivel.site/course/view.php?id=3" class="btn btn-danger" role="button">SAIR DA ATIVIDADE</a>
+        </div>
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
